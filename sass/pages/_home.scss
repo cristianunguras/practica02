@@ -1,2 +1,55 @@
 /* @HOME */
 /* ********** */
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 102, 255, 0.36) 0%,
+    rgba(158, 0, 255, 0) 100%
+  );
+}
+
+// para Smartphone
+@media only screen and (min-width: map-get($breakpoints, smartphone)) and (orientation: portrait) {
+  main {
+    padding-top: 11px;
+  }
+  .main {
+    padding-top: 38px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: map-get($colores, morado);
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+}
+
+// para Desktop
+@media only screen and (min-width: map-get($breakpoints, desktop)) {
+  main {
+    padding-top: 75px;
+  }
+  /*.main::before {
+    content: "";
+    width: 300px;
+    height: 300px;
+    background: url(../img/menu.svg);
+  }
+  .main::after {
+    content: "";
+    width: 300px;
+    height: 300px;
+    background: url(../img/cubiertos.svg);
+  }*/
+  .main {
+    padding-top: 38px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: map-get($colores, morado);
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+}
